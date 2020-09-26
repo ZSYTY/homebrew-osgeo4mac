@@ -11,8 +11,6 @@ class SipQt4 < Formula
     sha256 "4c95142a42599fb0b6668e50e49913f19d0462ee05590aa9844cbc41cba6e350" => :sierra
   end
 
-  depends_on "python@2" => :recommended
-
   def install
     if build.without? "python@2"
       # this is a flaw in Homebrew, where `depends on :python` alone does not work
